@@ -17,12 +17,17 @@ The purpose of this analysis is to develop a predictive model using deep learnin
   - **Output Layer:** Single neuron with a sigmoid activation function for binary classification.
 
 - **Achievement of Target Model Performance:**
-  - The model achieved a loss of 0.5588 and an accuracy of 72.67% on the test data, meeting the target performance threshold.
+  - The model achieved a loss of 0.5588 and an accuracy of 72.67% on the test data.
 
-- **Steps Taken to Increase Model Performance:**
-  - Implemented multiple hidden layers to capture complex relationships in the data.
-  - Utilized the tanh activation function known for handling non-linearities effectively.
-  - Adjusted the number of epochs during training to find an optimal balance between model performance and computational resources.
+- **Steps Taken to Develop Model:**
+  - Used multiple hidden layers for higher accuracy.
+  - Utilized the tanh activation function for handling non-linearities.
+  - Set epochs = 100.
 
 ## Summary
-The deep learning model successfully predicts the effectiveness of funding for Alphabet Soup-funded organizations with an accuracy exceeding the target threshold. By employing optimization techniques, we were able to improve the model's performance further. However, for a different approach, a gradient boosting classifier could be considered. Gradient boosting algorithms, such as XGBoost or LightGBM, are powerful for binary classification tasks and could provide competitive performance with potentially faster training times and better interpretability compared to neural networks. This alternative model choice would be beneficial if transparency and speed are critical factors in decision-making processes.
+For model creation, a neural network architecture was designed with an input layer of 26 neurons (matching the number of features) followed by two hidden layers with 21 neurons each, using the tanh activation function. The output layer consisted of a single neuron with a sigmoid activation function for binary classification.
+
+After compiling, training, and evaluating the model, it achieved a loss of 0.5588 and an accuracy of 72.67% on the test data.
+
+The deep learning model successfully predicts the effectiveness of funding for Alphabet Soup-funded organizations with an accuracy exceeding the target threshold. Despite achieving a reasonably high accuracy, there is room for further optimization to improve model performance. Experimentation with additional hidden layers, nodes, using `keras_tuner`, and alternative activation functions could be explored in future iterations to enhance predictive accuracy.
+
