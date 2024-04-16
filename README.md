@@ -9,9 +9,6 @@ The purpose of this analysis is to develop a predictive model using deep learnin
 - **Feature Variable(s):**
   - `APPLICATION_TYPE`, `AFFILIATION`, `CLASSIFICATION`, `USE_CASE`, `ORGANIZATION`, `STATUS`, `INCOME_AMT`, `SPECIAL_CONSIDERATIONS`, `ASK_AMT`.
 
-- **Variable(s) to be Removed:**
-  - `EIN` and `NAME` columns were removed as they do not contribute to the prediction.
-
 ### Compiling, Training, and Evaluating the Model:
 
 - **Neurons, Layers, and Activation Functions:**
